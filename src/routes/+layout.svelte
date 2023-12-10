@@ -4,7 +4,8 @@
 </script>
 
 <!-- App Shell -->
-<AppShell slotSidebarLeft="bg-surface-50-900-token w-56 p-4">
+<!--<AppShell slotSidebarLeft="bg-surface-50-900-token w-56 p-4">-->
+<AppShell>
   <svelte:fragment slot="header">
     <!-- App Bar -->
     <AppBar class="shadow-2xl">
@@ -36,18 +37,24 @@
         >
           GitHub
         </a>
-        <div><LightSwitch class="ml-4" /></div>
+        <div>
+          <LightSwitch class="ml-4" />
+        </div>
       </svelte:fragment>
     </AppBar>
   </svelte:fragment>
-  <svelte:fragment slot="sidebarLeft">
-    <!-- Insert the list: -->
-    <nav class="list-nav">
-      <ul>
-        <li><a href="/">Home</a></li>
-      </ul>
-    </nav>
-  </svelte:fragment>
+
+  <!--  <svelte:fragment slot="sidebarLeft">-->
+  <!--    &lt;!&ndash; Insert the list: &ndash;&gt;-->
+  <!--    <nav class="list-nav">-->
+  <!--      <ul>-->
+  <!--        <li><a href="/">Home</a></li>-->
+  <!--      </ul>-->
+  <!--    </nav>-->
+  <!--  </svelte:fragment>-->
+
   <!-- Page Route Content -->
-  <slot />
+  <div class="h-full w-full p-8">
+    <slot />
+  </div>
 </AppShell>
