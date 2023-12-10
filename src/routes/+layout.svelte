@@ -7,7 +7,7 @@
 <AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
   <svelte:fragment slot="header">
     <!-- App Bar -->
-    <AppBar>
+    <AppBar class="shadow-2xl">
       <svelte:fragment slot="lead">
         <h1 class="text-xl uppercase">Yamano-runner-hub</h1>
       </svelte:fragment>
