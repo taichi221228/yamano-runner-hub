@@ -1,6 +1,6 @@
 <script lang="ts">
   import '../app.postcss';
-  import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+  import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
 </script>
 
 <!-- App Shell -->
@@ -36,6 +36,7 @@
         >
           GitHub
         </a>
+        <div><LightSwitch class="ml-4" /></div>
       </svelte:fragment>
     </AppBar>
   </svelte:fragment>
