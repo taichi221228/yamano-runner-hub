@@ -9,7 +9,7 @@
     <!-- App Bar -->
     <AppBar>
       <svelte:fragment slot="lead">
-        <strong class="text-xl uppercase">Yamano-runner-hub</strong>
+        <h1 class="text-xl uppercase">Yamano-runner-hub</h1>
       </svelte:fragment>
       <svelte:fragment slot="trail">
         <a
