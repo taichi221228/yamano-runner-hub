@@ -4,7 +4,7 @@
 </script>
 
 <!-- App Shell -->
-<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
+<AppShell slotSidebarLeft="bg-surface-50-900-token w-56 p-4">
   <svelte:fragment slot="header">
     <!-- App Bar -->
     <AppBar class="shadow-2xl">
