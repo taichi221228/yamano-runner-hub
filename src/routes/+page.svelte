@@ -9,25 +9,25 @@
 <div class="card flex h-full w-full flex-col items-center p-6">
   <Stepper class="flex h-full w-full flex-col space-y-6" regionContent="grow">
     <Step class="flex h-full flex-col space-y-10" regionNavigation="!mt-auto">
-      <svelte:fragment slot="header">Get Started!</svelte:fragment>
+      <svelte:fragment slot="header">Select a flyer type</svelte:fragment>
       <div class="card bg-surface-50-900-token text-token">
         <ul>
           <li
             class="mx-4 flex items-center justify-between border-b border-surface-500/[.2] py-2 first:pt-4 last:border-none last:pb-4"
           >
-            Value 1
+            Multiple pages
             <SlideToggle name="slide" bind:checked={value1} />
           </li>
           <li
             class="mx-4 flex items-center justify-between border-b border-surface-500/[.2] py-2 first:pt-4 last:border-none last:pb-4"
           >
-            Value 2
+            Multiple links
             <SlideToggle name="slide" bind:checked={value3} />
           </li>
           <li
             class="mx-4 flex items-center justify-between border-b border-surface-500/[.2] py-2 first:pt-4 last:border-none last:pb-4"
           >
-            Value 3
+            Different editions for each store
             <SlideToggle name="slide" bind:checked={value2} />
           </li>
         </ul>
