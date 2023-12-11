@@ -4,8 +4,6 @@
 </script>
 
 <CustomStep>
-  <svelte:fragment slot="header">
-    <h2>Input flyer IDs</h2>
-  </svelte:fragment>
+  <svelte:fragment slot="header">Input flyer IDs</svelte:fragment>
   <MainPanel></MainPanel>
 </CustomStep>
