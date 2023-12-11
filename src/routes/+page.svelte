@@ -1,7 +1,7 @@
 <script>
   import { Step, Stepper } from '@skeletonlabs/skeleton';
   import { store } from '../features/link-install/store';
-  import SelectType from '../features/link-install/components/selectType.svelte';
+  import SelectType from '../features/link-install/components/SelectType.svelte';
 </script>
 
 <div class="card flex h-full w-full flex-col items-center p-6">
