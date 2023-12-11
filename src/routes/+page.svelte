@@ -1,56 +1,30 @@
 <script>
-  import { SlideToggle, Step, Stepper } from '@skeletonlabs/skeleton';
-
-  let value1 = false;
-  let value2 = false;
-  let value3 = false;
+  import { Step, Stepper } from '@skeletonlabs/skeleton';
+  import { store } from '../features/link-install/store';
+  import SelectContext from '../features/link-install/selectContext.svelte';
 </script>
 
 <div class="card flex h-full w-full flex-col items-center p-6">
   <Stepper class="flex h-full w-full flex-col space-y-6" regionContent="grow">
-    <Step class="flex h-full flex-col space-y-10" regionNavigation="!mt-auto">
-      <svelte:fragment slot="header">Select a flyer type</svelte:fragment>
-      <div class="card bg-surface-50-900-token text-token">
-        <ul>
-          <li
-            class="mx-4 flex items-center justify-between border-b border-surface-500/[.2] py-2 first:pt-4 last:border-none last:pb-4"
-          >
-            Multiple pages
-            <SlideToggle name="slide" bind:checked={value1} />
-          </li>
-          <li
-            class="mx-4 flex items-center justify-between border-b border-surface-500/[.2] py-2 first:pt-4 last:border-none last:pb-4"
-          >
-            Multiple links
-            <SlideToggle name="slide" bind:checked={value3} />
-          </li>
-          <li
-            class="mx-4 flex items-center justify-between border-b border-surface-500/[.2] py-2 first:pt-4 last:border-none last:pb-4"
-          >
-            Different editions for each store
-            <SlideToggle name="slide" bind:checked={value2} />
-          </li>
-        </ul>
-      </div>
-    </Step>
+    <SelectContext />
     <Step class="flex h-full flex-col space-y-10" regionNavigation="!mt-auto">
       <svelte:fragment slot="header">Get Started!</svelte:fragment>
       This example Stepper will teach you how to use this component. Tap next to proceed to the next
       step.
     </Step>
-    {#if value1}
+    {#if $store.value1}
       <Step class="flex h-full flex-col space-y-10" regionNavigation="!mt-auto">
         <svelte:fragment slot="header">Step 3</svelte:fragment>
         This is the third step.
       </Step>
     {/if}
-    {#if value2}
+    {#if $store.value2}
       <Step class="flex h-full flex-col space-y-10" regionNavigation="!mt-auto">
         <svelte:fragment slot="header">Step 4</svelte:fragment>
         This is the fourth step.
       </Step>
     {/if}
-    {#if value3}
+    {#if $store.value3}
       <Step class="flex h-full flex-col space-y-10" regionNavigation="!mt-auto">
         <svelte:fragment slot="header">Step 5</svelte:fragment>
         This is the fifth step.
