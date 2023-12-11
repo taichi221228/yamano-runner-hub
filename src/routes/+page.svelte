@@ -12,19 +12,19 @@
       This example Stepper will teach you how to use this component. Tap next to proceed to the next
       step.
     </Step>
-    {#if $store.value1}
+    {#if $store.isMultiPage}
       <Step class="flex h-full flex-col space-y-10" regionNavigation="!mt-auto">
         <svelte:fragment slot="header">Step 3</svelte:fragment>
         This is the third step.
       </Step>
     {/if}
-    {#if $store.value2}
+    {#if $store.isMultiLink}
       <Step class="flex h-full flex-col space-y-10" regionNavigation="!mt-auto">
         <svelte:fragment slot="header">Step 4</svelte:fragment>
         This is the fourth step.
       </Step>
     {/if}
-    {#if $store.value3}
+    {#if $store.isMultiEdition}
       <Step class="flex h-full flex-col space-y-10" regionNavigation="!mt-auto">
         <svelte:fragment slot="header">Step 5</svelte:fragment>
         This is the fifth step.

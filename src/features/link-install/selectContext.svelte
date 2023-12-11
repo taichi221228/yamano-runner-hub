@@ -11,19 +11,19 @@
         class="mx-4 flex items-center justify-between border-b border-surface-500/[.2] py-2 first:pt-4 last:border-none last:pb-4"
       >
         Multiple pages
-        <SlideToggle name="slide" bind:checked={$store.value1} />
+        <SlideToggle name="slide" bind:checked={$store.isMultiPage} />
       </li>
       <li
         class="mx-4 flex items-center justify-between border-b border-surface-500/[.2] py-2 first:pt-4 last:border-none last:pb-4"
       >
         Multiple links
-        <SlideToggle name="slide" bind:checked={$store.value3} />
+        <SlideToggle name="slide" bind:checked={$store.isMultiLink} />
       </li>
       <li
         class="mx-4 flex items-center justify-between border-b border-surface-500/[.2] py-2 first:pt-4 last:border-none last:pb-4"
       >
-        Different editions for each store
-        <SlideToggle name="slide" bind:checked={$store.value2} />
+        Multiple editions
+        <SlideToggle name="slide" bind:checked={$store.isMultiEdition} />
       </li>
     </ul>
   </div>
