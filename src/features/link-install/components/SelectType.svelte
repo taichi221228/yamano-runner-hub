@@ -1,7 +1,9 @@
 <script>
   import { SlideToggle } from '@skeletonlabs/skeleton';
-  import CustomStep from '../../../components/CustomStep.svelte';
-  import MainPanel from '../../../components/MainPanel.svelte';
+
+  import CustomStep from '$components/CustomStep.svelte';
+  import MainPanel from '$components/MainPanel.svelte';
+
   import { store } from '../store';
 </script>
 

@@ -1,8 +1,9 @@
 <script>
   import { Step, Stepper } from '@skeletonlabs/skeleton';
-  import { store } from '../features/link-install/store';
-  import SelectType from '../features/link-install/components/SelectType.svelte';
-  import InputFlyerId from '../features/link-install/components/InputFlyerId.svelte';
+
+  import SelectType from '$features/link-install/components/SelectType.svelte';
+  import InputFlyerId from '$features/link-install/components/InputFlyerId.svelte';
+  import { store } from '$features/link-install/store';
 </script>
 
 <div class="card flex h-full w-full flex-col items-center p-6">
