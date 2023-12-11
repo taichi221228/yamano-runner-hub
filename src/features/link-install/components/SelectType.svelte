@@ -1,9 +1,10 @@
 <script>
-  import { SlideToggle, Step } from '@skeletonlabs/skeleton';
+  import { SlideToggle } from '@skeletonlabs/skeleton';
+  import CustomStep from '../../../components/CustomStep.svelte';
   import { store } from '../store';
 </script>
 
-<Step class="flex h-full flex-col space-y-10" regionNavigation="!mt-auto">
+<CustomStep>
   <svelte:fragment slot="header">Select a flyer type</svelte:fragment>
   <div class="card bg-surface-50-900-token text-token">
     <ul>
@@ -27,4 +28,4 @@
       </li>
     </ul>
   </div>
-</Step>
+</CustomStep>
