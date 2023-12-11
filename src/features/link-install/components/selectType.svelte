@@ -1,6 +1,6 @@
 <script>
   import { SlideToggle, Step } from '@skeletonlabs/skeleton';
-  import { store } from './store';
+  import { store } from '../store';
 </script>
 
 <Step class="flex h-full flex-col space-y-10" regionNavigation="!mt-auto">
