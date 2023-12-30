@@ -14,20 +14,20 @@
       <li
         class="flex items-center justify-between border-b border-surface-500/[.2] py-3 first:pt-0 last:border-none last:pb-0"
       >
-        Multiple pages
-        <SlideToggle name="slide" bind:checked={$store.isMultiPage} />
+        Multiple pages 🚧
+        <SlideToggle disabled name="slide" bind:checked={$store.isMultiPage} />
       </li>
       <li
         class="flex items-center justify-between border-b border-surface-500/[.2] py-3 first:pt-0 last:border-none last:pb-0"
       >
-        Multiple links
-        <SlideToggle name="slide" bind:checked={$store.isMultiLink} />
+        Multiple links 🚧
+        <SlideToggle disabled name="slide" bind:checked={$store.isMultiLink} />
       </li>
       <li
         class="flex items-center justify-between border-b border-surface-500/[.2] py-3 first:pt-0 last:border-none last:pb-0"
       >
-        Multiple editions
-        <SlideToggle name="slide" bind:checked={$store.isMultiEdition} />
+        Multiple editions 🚧
+        <SlideToggle disabled name="slide" bind:checked={$store.isMultiEdition} />
       </li>
     </ul>
   </MainPanel>
