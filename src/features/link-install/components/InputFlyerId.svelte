@@ -1,8 +1,16 @@
-<script>
+<script lang="ts">
+  import type { MouseEventHandler } from 'svelte/elements';
+
   import CustomStep from '$components/CustomStep.svelte';
   import MainPanel from '$components/MainPanel.svelte';
 
   import { store } from '../store';
+
+  $: value = '';
+
+  const inputFlyerIds: MouseEventHandler<HTMLButtonElement> = () => {
+    console.log('v:', value);
+  };
 </script>
 
 <CustomStep>
@@ -95,9 +103,16 @@
 
     <div class="mt-5 flex gap-4">
       <label class="label grow">
-        <input class="input" type="text" placeholder="000000, 111111, 222222" />
+        <input
+          class="input"
+          type="text"
+          placeholder="000000,111111,222222"
+          on:change={(event) => {
+            if (event.target instanceof HTMLInputElement) value = event.target.value;
+          }}
+        />
       </label>
-      <button type="button" class="variant-filled btn">Add</button>
+      <button type="button" class="variant-filled btn" on:click={inputFlyerIds}>Add</button>
     </div>
   </MainPanel>
 </CustomStep>
