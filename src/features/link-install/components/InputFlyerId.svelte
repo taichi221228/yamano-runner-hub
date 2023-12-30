@@ -16,7 +16,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>北関東</td>
+            <td>Northern Kantō</td>
             <td>
               <input
                 type="text"
@@ -26,7 +26,7 @@
             </td>
           </tr>
           <tr>
-            <td>南関東</td>
+            <td>Southern Kantō</td>
             <td>
               <input
                 type="text"
@@ -36,7 +36,7 @@
             </td>
           </tr>
           <tr>
-            <td>東海</td>
+            <td>Tōkai</td>
             <td>
               <input
                 type="text"
@@ -46,7 +46,7 @@
             </td>
           </tr>
           <tr>
-            <td>北陸</td>
+            <td>Hokuriku</td>
             <td>
               <input
                 type="text"
@@ -56,7 +56,7 @@
             </td>
           </tr>
           <tr>
-            <td>近畿</td>
+            <td>Kinki</td>
             <td>
               <input
                 type="text"
@@ -66,7 +66,7 @@
             </td>
           </tr>
           <tr>
-            <td>中四国</td>
+            <td>Chūgoku & Shikoku</td>
             <td>
               <input
                 type="text"
