@@ -1,6 +1,8 @@
 <script>
   import CustomStep from '$components/CustomStep.svelte';
   import MainPanel from '$components/MainPanel.svelte';
+
+  import { store } from '../store';
 </script>
 
 <CustomStep>
@@ -21,6 +23,7 @@
               <input
                 type="text"
                 placeholder="000000"
+                value={$store.flyerIds.northernKanto}
                 class="input -my-[9999px] w-full rounded-none border-[1px] p-0 text-[inherit] [&:not(:focus-within)]:border-transparent [&:not(:focus-within,:hover)]:bg-transparent"
               />
             </td>
@@ -31,6 +34,7 @@
               <input
                 type="text"
                 placeholder="111111"
+                value={$store.flyerIds.southernKanto}
                 class="input -my-[9999px] w-full rounded-none border-[1px] p-0 text-[inherit] [&:not(:focus-within)]:border-transparent [&:not(:focus-within,:hover)]:bg-transparent"
               />
             </td>
@@ -41,6 +45,7 @@
               <input
                 type="text"
                 placeholder="222222"
+                value={$store.flyerIds.tokai}
                 class="input -my-[9999px] w-full rounded-none border-[1px] p-0 text-[inherit] [&:not(:focus-within)]:border-transparent [&:not(:focus-within,:hover)]:bg-transparent"
               />
             </td>
@@ -51,6 +56,7 @@
               <input
                 type="text"
                 placeholder=""
+                value={$store.flyerIds.hokuriku}
                 class="input -my-[9999px] w-full rounded-none border-[1px] p-0 text-[inherit] [&:not(:focus-within)]:border-transparent [&:not(:focus-within,:hover)]:bg-transparent"
               />
             </td>
@@ -61,6 +67,7 @@
               <input
                 type="text"
                 placeholder=""
+                value={$store.flyerIds.kinki}
                 class="input -my-[9999px] w-full rounded-none border-[1px] p-0 text-[inherit] [&:not(:focus-within)]:border-transparent [&:not(:focus-within,:hover)]:bg-transparent"
               />
             </td>
@@ -71,6 +78,7 @@
               <input
                 type="text"
                 placeholder=""
+                value={$store.flyerIds.chugokuShikoku}
                 class="input -my-[9999px] w-full rounded-none border-[1px] p-0 text-[inherit] [&:not(:focus-within)]:border-transparent [&:not(:focus-within,:hover)]:bg-transparent"
               />
             </td>
